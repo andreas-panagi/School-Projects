@@ -1,0 +1,135 @@
+*{					/*accessing everything*/
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+
+html{				/*accessing all the html*/
+	height:100%;
+}
+
+.main{			
+	min-height:100%;		
+	width:100%;
+	position:relative;
+}
+
+body{
+	height:100%;
+	background:rgb(236, 236, 236);
+}
+
+h2{						/* Editing the header */
+	padding:150px;
+	background-image: url(Macos.png);
+	background-size: 100%;
+	width:100%;
+	color:#f0f1f5;
+	font-family: helvetica;
+	text-align: center;
+	font-size:50pt;
+	letter-spacing: 5px;
+}
+
+.dropdownmenu{			/*adding color on the background line of the nav-bar*/
+	background:#112233;
+}
+
+nav {						/*editing the nav-bar*/
+	height:40px;
+	width:700px; 
+	display:block;
+	margin:0 auto;
+	text-align: center;
+}
+
+nav a{					/*adding specific edits on each section*/
+	display:block;
+	text-decoration: none;
+	font-family: arial;
+	font-weight: bold;
+	font-size:14pt;
+	color:#cacaca;
+	border-radius: 40px;
+}
+
+nav a:hover{		/*when hover change the background and the text-color*/
+	background:#385553;
+	color:#f0f1f5;
+}
+
+nav ul{				/*removing the dots from the list*/
+	list-style: none;
+}
+
+nav ul li{			/*making every section appear side by side*/
+	float:left;
+	width:140px;
+	height:40px;
+	line-height: 40px;
+	background: #112233;
+}
+
+nav ul ul li{		/*hiding the sub-secions*/
+	position:relative;
+	display:none;
+}
+
+nav ul li:hover ul li{		/*when hover show the sub-sections*/
+	border:0px;
+	background: #112233;
+	display: block;
+	animation: navmenu 500ms forwards;	
+}
+
+@keyframes navmenu{		/*animation for a more smoother experience*/
+	0%{
+		opacity:0;
+		top:20px;
+	}
+	
+	100%{
+		opacity:1;
+		top:0px;
+	}
+}
+
+article{			/*editing the article*/
+	padding:10px;
+	font-family: arial;
+	line-height: 40px;
+}
+
+footer{				/*editing the footer*/
+	border-top:2px solid #3157d6;
+	position: absolute;
+	bottom:0px;
+	padding:10px;
+	width: 100%;
+	text-align: center;
+	background:#112233;
+	color:#fff;
+	font-family: Arial;
+	font-weight: bold;
+	font-size:11pt;
+	
+}
+
+img{			/*editing the logo*/
+	height: 130px;
+	position: absolute;
+	top: -24px;
+	left: 20px;
+}
+
+.image{			/*editing the image-logo in "about.html"*/
+	height: 400px;
+	position: relative;
+	left:-6%;
+	
+}
+
+iframe{			/*editing the youtube video player*/
+	width:50%;
+	margin: 0px 25% 20px 25%;
+}
